@@ -72,14 +72,22 @@
                                     <segue destination="yd0-Ra-eyA" kind="push" id="jCs-Qo-5Ds"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeJoga" translatesAutoresizingMaskIntoConstraints="NO" id="ZGx-0b-j9l">
+                                <rect key="frame" x="287" y="43" width="451" height="149"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="451" id="IbO-WQ-YQL"/>
+                                    <constraint firstAttribute="height" constant="149" id="L75-L8-Y5V"/>
+                                </constraints>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeSelectGame" translatesAutoresizingMaskIntoConstraints="NO" id="zgY-HO-LbQ">
-                                <rect key="frame" x="299" y="58" width="426" height="48"/>
+                                <rect key="frame" x="299" y="200" width="426" height="48"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="95t-3k-Huh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="7KC-Jb-51Q"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wdp-lx-Fml" secondAttribute="bottom" constant="48" id="9Sr-Vy-eLK"/>
+                            <constraint firstItem="ZGx-0b-j9l" firstAttribute="centerX" secondItem="zgY-HO-LbQ" secondAttribute="centerX" id="EvQ-pp-8Bl"/>
                             <constraint firstAttribute="trailing" secondItem="OoZ-cv-tSk" secondAttribute="trailing" id="FQG-f9-rJM"/>
                             <constraint firstItem="95t-3k-Huh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Kqq-fy-fxG"/>
                             <constraint firstItem="21j-bm-GM3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="L2N-dp-l4M"/>
@@ -87,17 +95,18 @@
                             <constraint firstItem="OoZ-cv-tSk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="OKR-1O-w19"/>
                             <constraint firstItem="OoZ-cv-tSk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Q01-vO-VXg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wYC-3k-bT2" secondAttribute="trailing" constant="139" id="See-T8-ASl"/>
+                            <constraint firstItem="zgY-HO-LbQ" firstAttribute="top" secondItem="ZGx-0b-j9l" secondAttribute="bottom" constant="8" id="Ssq-Ce-ne5"/>
                             <constraint firstItem="zgY-HO-LbQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="279" id="T3L-eh-af5"/>
                             <constraint firstItem="Mlo-Gs-6Tu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="142" id="TGL-yS-q7w"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zgY-HO-LbQ" secondAttribute="trailing" constant="279" id="Uv5-XA-HsB"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wYC-3k-bT2" secondAttribute="bottom" constant="116" id="bLl-PZ-oqL"/>
                             <constraint firstItem="wYC-3k-bT2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="313" id="e9Y-9Z-imL"/>
-                            <constraint firstItem="zgY-HO-LbQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="38" id="fS3-VF-Ft6"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Mlo-Gs-6Tu" secondAttribute="bottom" constant="131" id="gbE-rf-2uI"/>
                             <constraint firstItem="wYC-3k-bT2" firstAttribute="leading" secondItem="wdp-lx-Fml" secondAttribute="trailing" constant="42" id="hXm-4y-Doe"/>
                             <constraint firstItem="wdp-lx-Fml" firstAttribute="leading" secondItem="Mlo-Gs-6Tu" secondAttribute="trailing" constant="19" id="in6-0s-IdR"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OoZ-cv-tSk" secondAttribute="bottom" id="lVr-ae-N6e"/>
                             <constraint firstItem="Mlo-Gs-6Tu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="287" id="y3P-tD-V1F"/>
+                            <constraint firstItem="ZGx-0b-j9l" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="23" id="z4v-8S-uYm"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vDy-Fi-jLr"/>
@@ -534,6 +543,7 @@
         <image name="homeAbout" width="43" height="71"/>
         <image name="homeDetetive" width="191" height="330"/>
         <image name="homeFutebol" width="213" height="319"/>
+        <image name="homeJoga" width="436" height="132"/>
         <image name="homeLabirinto" width="184" height="334"/>
         <image name="homeSelectGame" width="403" height="48"/>
         <image name="homeSettings" width="66" height="70"/>
