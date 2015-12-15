@@ -14,8 +14,12 @@ class JMLabirinthViewController: UIViewController {
     @IBOutlet var levelImage: UIImageView!
     @IBOutlet var howToPlayImage: UIImageView!
     
+    @IBOutlet var successView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.successView.removeFromSuperview()
 
         // Do any additional setup after loading the view.
     }
@@ -39,13 +43,13 @@ class JMLabirinthViewController: UIViewController {
     @IBAction func playClicked() {
         UIView.animateWithDuration(1.0, animations: {
             
-            self.howToPlayImage.alpha = 0.0;
+            self.howToPlayImage.alpha = 0.0
             
             }, completion: { finished in
                 
                 UIView.animateWithDuration(1.0, animations: {
                     
-                    self.levelImage.alpha = 0.0;
+                    self.levelImage.alpha = 0.0
                 })
         })
     }
@@ -58,9 +62,43 @@ class JMLabirinthViewController: UIViewController {
     @IBAction func helpClicked() {
         UIView.animateWithDuration(1.0, animations: {
             
-            self.howToPlayImage.alpha = 1.0;
+            self.howToPlayImage.alpha = 1.0
         })
     }
     
+    @IBAction func victoryClicked() {
+        
+        self.successView.alpha = 0.0
+        
+        self.view.addSubview(self.successView)
+        
+        UIView.animateWithDuration(1.0, animations: {
+            
+            self.successView.alpha = 1.0
+        })
+    }
 
+    @IBAction func nextClicked() {
+        self.levelImage.image = UIImage(named: "labirinto-Level2")
+        
+        UIView.animateWithDuration(1.0, animations: {
+            
+            self.successView.alpha = 0.0
+            
+            }, completion: { finished in
+                UIView.animateWithDuration(1.0, animations: {
+                    
+                    self.successView.removeFromSuperview()
+                    
+                    self.levelImage.alpha = 1.0
+                    
+                    }, completion: { finished in
+                        
+                        UIView.animateWithDuration(1.0, animations: {
+                            
+                            self.levelImage.alpha = 0.0
+                        })
+                })
+        })
+    }
 }

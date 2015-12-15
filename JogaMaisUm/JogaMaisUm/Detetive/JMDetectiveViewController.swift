@@ -40,13 +40,13 @@ class JMDetectiveViewController: UIViewController {
         
         UIView.animateWithDuration(1.0, animations: {
             
-            self.howToPlayImage.alpha = 0.0;
+            self.howToPlayImage.alpha = 0.0
             
             }, completion: { finished in
                 
                 UIView.animateWithDuration(1.0, animations: {
                     
-                    self.level1Image.alpha = 0.0;
+                    self.level1Image.alpha = 0.0
                 })
         })
     }
@@ -57,7 +57,7 @@ class JMDetectiveViewController: UIViewController {
         
         UIView.animateWithDuration(1.0, animations: {
             
-            self.level1Image.alpha = 1.0;
+            self.level1Image.alpha = 1.0
             
             }, completion: { finished in
                 
@@ -65,7 +65,7 @@ class JMDetectiveViewController: UIViewController {
                 
                 UIView.animateWithDuration(1.0, animations: {
                     
-                    self.level1Image.alpha = 0.0;
+                    self.level1Image.alpha = 0.0
                 })
         })
     }
@@ -79,7 +79,7 @@ class JMDetectiveViewController: UIViewController {
         
         UIView.animateWithDuration(1.0, animations: {
             
-            self.howToPlayImage.alpha = 1.0;
+            self.howToPlayImage.alpha = 1.0
         })
     }
 }
